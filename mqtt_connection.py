@@ -38,11 +38,11 @@ client.connect(host, port, keepalive)     # Host, terminal, keep alive
 client.username_pw_set(username,password)    # Username and Password
 #client.loop_forever()
 
-if __name__ == "__main__":
+while True:
     topic = str(input("Topic:   "))     # Input the topic in ""
-    estado = str(input("Data:   "))     # Input the data in ""
+    state = str(input("Data:   "))     # Input the data in ""
     print(topic)
-    print(estado)
+    print(state)
     client.subscribe(topic, qos=0) 
-    client.publish(topic, estado)
+    client.publish(topic, state)
     client.loop()

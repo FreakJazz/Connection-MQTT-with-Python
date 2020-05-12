@@ -74,20 +74,15 @@ import getpass
 
 ``` python
 # Main program
-if __name__ == "__main__":                  # Especial function main
-    window = Tk()                       # Define window interface
-    application = App(window)             # 
-    window.mainloop() 
-```
+if __name__ == "__main__":
+    topic = str(input("Topic:   "))     # Input the topic in ""
+    state = str(input("Data:   "))     # Input the data in ""
+    print(topic)
+    print(state)
+    client.subscribe(topic, qos=0) 
+    client.publish(topic, state)
+    client.loop()
 
-#### General Class
-
-Principal class
-```python
-class App(ttk.Frame):
-
-    # Window Init
-    def __init__(self, window):
 ```
 
 #### MQTT
@@ -95,13 +90,13 @@ class App(ttk.Frame):
 Connection is stablish with:
 
 ```python
-self.host = "broker.mqttdashboard.com"
-self.port 1883;
-self.keepalive = 60;
-self.clientid = "ClientID";
-self.username = "Your Username";
-self.password = "Your Password";
-self.topic = "YourTopic/#";
+host = "broker.mqttdashboard.com"
+port 1883;
+keepalive = 60;
+clientid = "ClientID";
+username = "Your Username";
+password = "Your Password";
+topic = "YourTopic/#";
 ```
 ***The same parameters entered in the broker must be established***
 
@@ -109,48 +104,42 @@ Connection Function
 
 ``` python
 ####### FUNCTION ON CONNECT ######
-    def on_connect(self,client, userdata, flags, rc):
-        print('Connected(%s)',self.client._client_id)
-        client.subscribe(self.topic, qos=0) 
-        client.publish(self.topic,'Connected')
+def on_connect(client, userdata, flags, rc):
+    print('Connected(%s)',client._client_id)
+    client.subscribe(topic, qos=0) 
+    client.publish(topic,'Connected')
 ```
 
 Message Function
 
 ``` python
-    ####### FUNCTION ON MESSAGE ######
-    def on_message(self,client, userdata, message):
-        print('----------------------')
-        print('topic: %s',  message.topic)
-        print('payload: %s', message.payload)
-        print('qos: %d', message.qos)
-        print(message.payload.decode("utf-8"))
+####### FUNCTION ON MESSAGE ######
+def on_message(client, userdata, message):
+    print('----------------------')
+    print('topic: %s',  message.topic)
+    print('payload: %s', message.payload)
+    print('qos: %d', message.qos)
+    print(message.payload.decode("utf-8"))
 ```
 
 Publish 
 
 ``` python
-self.client.publish(self.topic, state)
+client.publish(topic, state)
 ```
 Disconnected function
 
 ```python
-self.client.disconnect()
+client.disconnect()
 ```
 
 ## Result
 
 ### Desktop App
 
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/Interface.JPG)
+### Send data from Python to Broker
 
-### MQTT Config
-
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/MQTT_Connection.JPG)
-
-### Python Interface Configuration MQTT
-
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/python_connection.JPG)
+![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/send_python.JPG)
 
 ### Topic
 
