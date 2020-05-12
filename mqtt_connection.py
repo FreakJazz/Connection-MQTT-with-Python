@@ -14,7 +14,7 @@ keepalive = 60
 clientid = "Clientjazz23"
 username = "jazz23"                     # Give your own username
 password = "12345"                      # Give your own password
-topic = "light"
+topic = "dom/#"
 
 ####### FUNCTION ON CONNECT ######
 def on_connect(client, userdata, flags, rc):
@@ -38,8 +38,11 @@ client.connect(host, port, keepalive)     # Host, terminal, keep alive
 client.username_pw_set(username,password)    # Username and Password
 #client.loop_forever()
 
-while True:
-    estado = str(input("Send: "))
+if __name__ == "__main__":
+    topic = str(input("Topic:   "))     # Input the topic in ""
+    estado = str(input("Data:   "))     # Input the data in ""
+    print(topic)
     print(estado)
+    client.subscribe(topic, qos=0) 
     client.publish(topic, estado)
     client.loop()
