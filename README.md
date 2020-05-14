@@ -20,6 +20,7 @@ This program works with MQTT conection of  IOT in order to comunicate with three
 - [Programation](#item5)
 - [Results](#item6)
 - [Contributing](#item6)
+
 [Up](#top)
 
 <a name="item3"></a>
@@ -59,6 +60,7 @@ The following parameters must be considered to establish the connection
 - **Username:** This parameter is given by the user
 - **Password:** This parameter is given by the user
 - **Topic:**    This parameter is given by the user
+
 [Up](#top)
 
 <a name="item5"></a>
@@ -143,6 +145,7 @@ Disconnected function
 ```python
 client.disconnect()
 ```
+
 [Up](#top)
 
 <a name="item6"></a>
@@ -157,6 +160,7 @@ client.disconnect()
 MQTT 
 
 ![Topic Configuration](https://github.com/FreakJazz/Connection-MQTT-with-Python/blob/master/images/topic.JPG)
+
 [Up](#top)
 
 <a name="item7"></a>
@@ -165,4 +169,5 @@ MQTT
 **JAZMIN RODRIGUEZ** 
 
 [GitHub](https://github.com/FreakJazz), [LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-rodr%C3%ADguez-80b580133/)
+
 [Up](#top)
