@@ -20,8 +20,7 @@ This program works with MQTT conection of  IOT in order to comunicate with three
 - [Programation](#item5)
 - [Results](#item6)
 - [Contributing](#item6)
-
-[Subir](#top)
+[Up](#top)
 
 <a name="item3"></a>
 ## Library Installation
@@ -33,8 +32,8 @@ We have to install *pip install paho-mqtt*
 ### Installation
 The latest stable version is available in the Python Package Index (PyPi) and can be installed using
 
-``` pip install paho-mqtt```
-
+``` pip install paho-mqtt
+```
 
 Or with virtualenv:
 
@@ -43,8 +42,7 @@ virtualenv paho-mqtt
 source paho-mqtt/bin/activate
 pip install paho-mqtt 
 ```
-
-[Subir](#top)
+[Up](#top)
 
 <a name="item4"></a>
 ## Broker
@@ -61,8 +59,7 @@ The following parameters must be considered to establish the connection
 - **Username:** This parameter is given by the user
 - **Password:** This parameter is given by the user
 - **Topic:**    This parameter is given by the user
-
-[Subir](#top)
+[Up](#top)
 
 <a name="item5"></a>
 ## Programation
@@ -146,8 +143,7 @@ Disconnected function
 ```python
 client.disconnect()
 ```
-
-[Subir](#top)
+[Up](#top)
 
 <a name="item6"></a>
 ## Result
@@ -161,7 +157,7 @@ client.disconnect()
 MQTT 
 
 ![Topic Configuration](https://github.com/FreakJazz/Connection-MQTT-with-Python/blob/master/images/topic.JPG)
-[Subir](#top)
+[Up](#top)
 
 <a name="item7"></a>
 ## Contributing
@@ -169,5 +165,4 @@ MQTT
 **JAZMIN RODRIGUEZ** 
 
 [GitHub](https://github.com/FreakJazz), [LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-rodr%C3%ADguez-80b580133/)
-
-[Subir](#top)
+[Up](#top)
