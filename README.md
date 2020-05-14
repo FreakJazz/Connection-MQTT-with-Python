@@ -34,6 +34,8 @@ We have to install *pip install paho-mqtt*
 The latest stable version is available in the Python Package Index (PyPi) and can be installed using
 
 ``` pip install paho-mqtt```
+
+
 Or with virtualenv:
 
 ``` 
@@ -166,8 +168,6 @@ MQTT
 
 **JAZMIN RODRIGUEZ** 
 
-[GitHub](https://github.com/FreakJazz)   
-
-[LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-rodr%C3%ADguez-80b580133/)
+[GitHub](https://github.com/FreakJazz), [LinkedIn](https://www.linkedin.com/in/jazm%C3%ADn-rodr%C3%ADguez-80b580133/)
 
 [Subir](#top)
