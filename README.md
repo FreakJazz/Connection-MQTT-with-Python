@@ -10,7 +10,7 @@ In this project the MQTT connection with  the HiveMQ server will be visualized
 This program works with MQTT conection of  IOT in order to comunicate with three topics
 ## Contents
 
-- Description
+- require "Description"
 - Contents
 - Library Installation
 - Broker
@@ -42,7 +42,7 @@ After that, We need to open a Broker HIVEMQ
 [Broker Address](https://www.hivemq.com/public-mqtt-broker/)
 
 The following parameters must be considered to establish the connection
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/broker.JPG/)
+![Topic Configuration](https://github.com/FreakJazz/Connection-MQTT-with-Python/blob/master/images/broker.JPG/)
 
 - **Host:**     broker.mqttdashboard.com
 - **Port:**     1883 (Web Port)
@@ -135,17 +135,15 @@ client.disconnect()
 
 ## Result
 
-### Desktop App
-
 ### Send data from Python to Broker
 
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/send_python.JPG)
+![Topic Configuration](https://github.com/FreakJazz/Connection-MQTT-with-Python/blob/master/images/send_python.JPG)
 
 ### Topic
 
 MQTT 
 
-![Topic Configuration](https://github.com/FreakJazz/ESP32-connection-with-MQTT-python-interface-tkinter/blob/master/images/topic_message.JPG)
+![Topic Configuration](https://github.com/FreakJazz/Connection-MQTT-with-Python/blob/master/images/topic.JPG)
 
 
 ## Contributing
