@@ -12,8 +12,8 @@ host = "broker.mqttdashboard.com"        #'broker.mqttdashboard.com';
 port = 1883
 keepalive = 60
 clientid = "Clientjazz23"
-username = "jazz23"                     # Give your own username
-password = "12345"                      # Give your own password
+username = "jazz1234"                     # Give your own username
+password = "123456"                      # Give your own password
 topic = "dom/#"
 
 ####### FUNCTION ON CONNECT ######
